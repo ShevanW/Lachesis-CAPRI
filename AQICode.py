@@ -34,3 +34,45 @@ try:
 
 except requests.exceptions.RequestException as e:
     print("⚠️ Request error:", e)
+    
+    
+    
+import time
+
+BASE_URL = "https://api.airvisual.com/v2"
+STATE = "Victoria"  # Target state
+
+# Get all cities in Victoria
+cities_url = f"{BASE_URL}/cities?state={STATE}&country=Australia&key={API_KEY}"
+cities_data = requests.get(cities_url).json()
+
+if cities_data["status"] != "success":
+    print(f"Error getting cities for {STATE}:", cities_data)
+    exit()
+
+all_data = []
+
+# Loop through cities in Victoria
+for city_info in cities_data["data"]:
+    city = city_info["city"]
+    print(f"Fetching air quality for city: {city}")
+
+    city_url = f"{BASE_URL}/city?city={city}&state={STATE}&country=Australia&key={API_KEY}"
+    city_data = requests.get(city_url).json()
+
+    if city_data["status"] == "success":
+        all_data.append(city_data["data"])
+
+    # Delay to avoid rate limit
+    time.sleep(1)
+
+# Display results
+print("\nAir Quality Data for Victoria, Australia:\n")
+for entry in all_data:
+    city = entry['city']
+    aqi_us = entry['current']['pollution']['aqius']
+    main_pollutant = entry['current']['pollution']['mainus']
+    temp_c = entry['current']['weather']['tp']
+    humidity = entry['current']['weather']['hu']
+
+    print(f"{city} → AQI: {aqi_us}, Main Pollutant: {main_pollutant.upper()}, Temp: {temp_c}°C, Humidity: {humidity}%")
