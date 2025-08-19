@@ -1,0 +1,40 @@
+Report created  2025-06-13,,,,,,,,,,,,,,,,,,,,
+Validated data,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+Parameter Information,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+parameter_method_name,parameter_name,parameter_description,analysis_method_name,method_quality,unit_of_measure,Alphington,Altona North,Box Hill,Brighton,Brooklyn,Dandenong,Geelong South,Macleod,Melbourne CBD,Melton,Mooroolbark,Morwell East,Morwell South,Point Cook,Traralgon
+BSP,BSP,Scattering coefficent of light due to particles,Light scattering method - Nephelometer,Equivalence Method,1/Mm,Present,Not present,Not present,Not present,Present,Present,Present,Not present,Not present,Not present,Present,Present,Present,Present,Present
+CO,CO,Carbon Monoxide,Direct reading - Infrared,Equivalence Method,ppm,Present,Not present,Not present,Not present,Not present,Not present,Present,Not present,Not present,Not present,Not present,Present,Present,Not present,Present
+DBT,DBT,Dry Bulb Temperature,Dry Bulb Temperature,Equivalence Method,deg.C,Present,Present,Not present,Not present,Present,Present,Present,Not present,Not present,Present,Present,Present,Present,Present,Present
+NO2,NO2,Nitrogen Dioxide,Direct reading - Chemilluminescence,Equivalence Method,ppb,Present,Present,Not present,Not present,Not present,Present,Present,Not present,Not present,Not present,Not present,Not present,Present,Not present,Present
+O3,O3,Ozone,Direct reading - UV Photometer,Equivalence Method,ppb,Present,Not present,Not present,Not present,Not present,Present,Present,Not present,Not present,Present,Present,Not present,Present,Present,Present
+PM10,PM10,Particulate Matter of 10 microns or less,Tapered element oscillating microbalance,Equivalence Method,ug/m3,Present,Not present,Not present,Not present,Present,Present,Present,Not present,Not present,Not present,Present,Not present,Not present,Not present,Present
+SBPM25,PM2.5,Particulate Matter of 2.5 microns or less,BAM corrected to standard temperature and pressure,Equivalence Method,ug/m3,Present,Not present,Present,Present,Not present,Present,Present,Present,Present,Present,Not present,Not present,Not present,Not present,Present
+Sigma60,SIG60,Sigma Theta over an hour,Ultrasonic anemometer,Equivalence Method,deg,Present,Present,Not present,Not present,Not present,Present,Present,Not present,Not present,Present,Present,Not present,Not present,Present,Present
+SO2,SO2,Sulphur Dioxide,Direct reading - UV Fluorescence,Equivalence Method,ppb,Present,Present,Not present,Not present,Not present,Not present,Present,Not present,Not present,Not present,Not present,Present,Present,Not present,Present
+SWD,SWD,Scalar Wind Direction,Ultrasonic anemometer,Equivalence Method,deg,Present,Present,Not present,Not present,Not present,Present,Present,Not present,Not present,Present,Present,Not present,Not present,Present,Present
+SWS,SWS,Scalar Wind Speed,Ultrasound anemometer,Equivalence Method,m/s,Present,Present,Not present,Not present,Not present,Present,Present,Not present,Not present,Present,Present,Not present,Not present,Present,Present
+VWD,VWD,Vector Wind Direction,Ultrasound anemometer,Equivalence Method,deg,Present,Present,Not present,Not present,Not present,Present,Present,Not present,Not present,Present,Present,Not present,Not present,Present,Present
+VWS,VWS,Vector Wind Speed,Ultrasound anemometer,Equivalence Method,m/s,Present,Present,Not present,Not present,Not present,Present,Present,Not present,Not present,Present,Present,Not present,Not present,Present,Present
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+Location Information,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+location_id,location_name,latitude,longitude,,,,,,,,,,,,,,,,,
+10017,Morwell East,-38.229393,146.424454,,,,,,,,,,,,,,,,,
+10136,Mooroolbark,-37.7749672,145.3285,,,,,,,,,,,,,,,,,
+10006,Altona North,-37.84455,144.8629,,,,,,,,,,,,,,,,,
+10022,Dandenong,-37.98576,145.1987,,,,,,,,,,,,,,,,,
+10005,Point Cook,-37.9263153,144.7567,,,,,,,,,,,,,,,,,
+10107,Geelong South,-38.17356,144.3703,,,,,,,,,,,,,,,,,
+10011,Traralgon,-38.1942825,146.531464,,,,,,,,,,,,,,,,,
+10001,Alphington,-37.7784081,145.0306,,,,,,,,,,,,,,,,,
+10169,Melton,-37.7064552,144.5669,,,,,,,,,,,,,,,,,
+10239,Melbourne CBD,-37.8073959,144.97,,,,,,,,,,,,,,,,,
+10042,Box Hill,-37.8287277,145.1324,,,,,,,,,,,,,,,,,
+10007,Brighton,-37.9135475,144.998,,,,,,,,,,,,,,,,,
+10217,Morwell South,-38.2392921,146.3873,,,,,,,,,,,,,,,,,
+10377,Macleod,-37.722477,145.0576,,,,,,,,,,,,,,,,,
+1112,Brooklyn,-37.8220978,144.8471,,,,,,,,,,,,,,,,,
