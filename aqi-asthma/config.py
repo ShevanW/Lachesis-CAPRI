@@ -14,6 +14,13 @@ ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
 # Start with one site for clarity; we can generalize later.
 SITE_SHEET = "Alphington_10001"     # e.g., "Melbourne CBD_10239", "Dandenong_10022"
 
+# Optional: list of site sheets for multi-site training
+SITE_SHEETS = [
+    "Alphington_10001",
+    "Melbourne CBD_10239",
+    "Dandenong_10022",
+]
+
 # Predict how far ahead (in hours)
 HORIZON_HOURS = 6
 
@@ -30,12 +37,14 @@ PERCENTILE_CUT = 0.90  # top 10% labeled as "high-risk" per pollutant
 
 # B) Fixed thresholds (swap in later with authoritative AU NEPM/WHO values and correct units)
 FIXED_THRESHOLDS = {
-    "PM25": 35.0,   # µg/m³ (24h) – placeholder
-    "PM10": 50.0,   # µg/m³ (24h) – placeholder
-    "NO2": 200.0,   # µg/m³ (1h)  – placeholder
-    "O3": 120.0,    # µg/m³ (8h)  – placeholder
-    "SO2": 125.0,   # µg/m³ (24h) – placeholder
-    "CO": 10.0      # mg/m³ (8h)  – placeholder
+    # Units taken from your Metadata sheet:
+    # PM: µg/m³, NO2/O3/SO2: ppb, CO: ppm
+    "PM25": 25.0,   # µg/m³ (24h guideline; hourly proxy for now)
+    "PM10": 50.0,   # µg/m³
+    "NO2": 80.0,    # ppb (1h guideline)
+    "O3": 80.0,     # ppb (8h guideline; hourly proxy)
+    "SO2": 100.0,   # ppb (1h guideline proxy)
+    "CO": 9.0       # ppm (8h guideline; hourly proxy)
 }
 
 # --------- Plotting / split ---------
