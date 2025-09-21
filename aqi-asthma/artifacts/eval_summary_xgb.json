@@ -1,0 +1,22 @@
+{
+  "n_train": 4560,
+  "n_test": 1140,
+  "roc_auc": 0.7149309707021471,
+  "pr_auc": 0.569009093565854,
+  "confusion_matrix": [
+    [
+      480,
+      267
+    ],
+    [
+      123,
+      270
+    ]
+  ],
+  "classification_report": "              precision    recall  f1-score   support\n\n           0      0.796     0.643     0.711       747\n           1      0.503     0.687     0.581       393\n\n    accuracy                          0.658      1140\n   macro avg      0.649     0.665     0.646      1140\nweighted avg      0.695     0.658     0.666      1140\n",
+  "horizon_hours": 6,
+  "top_features_png": "artifacts\\feature_importances_xgb.png",
+  "pr_curve_png": "artifacts\\pr_curve_xgb.png",
+  "timeline_png": "artifacts\\risk_timeline_xgb.png",
+  "scale_pos_weight": 1.7586206896551724
+}

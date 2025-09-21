@@ -1,0 +1,45 @@
+{
+  "sheets_used": [
+    "Alphington_10001",
+    "Melbourne CBD_10239",
+    "Dandenong_10022"
+  ],
+  "horizon_hours": 6,
+  "lags": [
+    1,
+    2,
+    3,
+    6
+  ],
+  "use_percentiles": true,
+  "percentile_cut": 0.9,
+  "thresholds_effective": {
+    "PM25": 14.605,
+    "PM10": 31.5015,
+    "NO2": 18.947,
+    "O3": 30.232,
+    "SO2": 0.7638000000000001,
+    "CO": 0.398
+  },
+  "n_total_after_dropna": 5700,
+  "n_train": 4560,
+  "n_test": 1140,
+  "time_features": [
+    "hour",
+    "dow",
+    "month",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "month_sin",
+    "month_cos"
+  ],
+  "rolling_windows_h": [
+    3,
+    6,
+    24
+  ],
+  "lag_feature_count": 208,
+  "test_fraction": 0.2
+}
