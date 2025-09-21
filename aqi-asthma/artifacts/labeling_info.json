@@ -1,0 +1,40 @@
+{
+  "site_sheet": "Alphington_10001",
+  "horizon_hours": 6,
+  "lags": [
+    1,
+    2,
+    3,
+    6
+  ],
+  "use_percentiles": true,
+  "percentile_cut": 0.9,
+  "thresholds_effective": {
+    "PM25": 16.0438,
+    "PM10": 31.5492,
+    "NO2": 17.320199999999996,
+    "O3": 30.108,
+    "SO2": 0.7638000000000001,
+    "CO": 0.398
+  },
+  "n_total_after_dropna": 5779,
+  "n_train": 4623,
+  "n_test": 1156,
+  "feature_candidates": [
+    "BSP",
+    "CO",
+    "DBT",
+    "NO2",
+    "O3",
+    "PM10",
+    "PM25",
+    "Sigma60",
+    "SO2",
+    "SWD",
+    "SWS",
+    "VWD",
+    "VWS"
+  ],
+  "lag_feature_count": 52,
+  "test_fraction": 0.2
+}
